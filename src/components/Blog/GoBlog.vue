@@ -2,12 +2,10 @@
 </script>
 
 <template>
-  <div className="home">
-    <h1>Home</h1>
-    <h2>My blog</h2>
+  <title> blog </title>
+  <div class="home">
+    <h1>My Journey Learning Go: The First Steps into Programming </h1>
     <br />
-    <h2> My Journey Learning Go: The First Steps into Programming </h2>
-
     <p> When I decided to learn programming, I was overwhelmed by the choices: Python, JavaScript, C++, and many more.
       After
       some research, I landed on Go (or Golang), a language known for its simplicity and efficiency. Here's what my

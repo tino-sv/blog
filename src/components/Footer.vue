@@ -6,7 +6,7 @@ export default {
 
 <template>
   <footer className="home-footer">
-    <p>© 2021 My Blog</p>
+    <p>© 2025 My Blog</p>
     <p>Built by tinodev</p>
   </footer>
 </template>
