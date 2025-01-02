@@ -1,3 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-dark text-white font-mono;
+  }
+  
+  .dark body {
+    @apply bg-black;
+  }
+}
+
+@layer components {
+  .cyber-grid {
+    background-image: linear-gradient(rgba(0, 255, 249, 0.1) 1px, transparent 1px),
+                     linear-gradient(90deg, rgba(0, 255, 249, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -6,11 +28,6 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -25,8 +42,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -76,4 +92,21 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+body.dark {
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+body.dark a {
+  color: #bb86fc;
+}
+
+body.dark button {
+  background-color: #333;
+}
+
+body.dark button:hover {
+  border-color: #bb86fc;
 }

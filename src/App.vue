@@ -2,12 +2,17 @@
 import { RouterView } from 'vue-router';
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
+import './style.css';
 </script>
 
 <template>
-  <Header />
-  <RouterView />
-  <Footer />
+  <div class="flex flex-col min-h-screen bg-gradient-to-b from-cyber-dark to-black text-white font-mono">
+    <Header />
+    <div class="flex-grow max-w-7xl mx-auto px-4 py-8">
+      <RouterView />
+    </div>
+    <Footer />
+  </div>
 </template>
 
 <style scoped>

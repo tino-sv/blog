@@ -3,10 +3,8 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-  <title> blog </title>
-  <div class="home">
-    <br />
-    <h3>
+  <div class="home p-4">
+    <h3 class="text-cyber-blue hover:text-cyber-pink transition-colors duration-300">
       <RouterLink to="/blog/go">My Journey Learning Go: The First Steps into Programming</RouterLink>
     </h3>
   </div>

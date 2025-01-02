@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Blog from './components/Blog/Blog.vue';
 import GoBlog from './components/Blog/GoBlog.vue';
 import Home from './components/Home.vue';
+import './style.css'; // Import Tailwind CSS
 
 const routes = [
   { path: '/', component: Home },
